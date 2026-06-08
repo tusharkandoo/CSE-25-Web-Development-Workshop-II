@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rolex — Premium Smartwatches</title>
+<!-- Bootstrap 5 CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <style>
+    :root {
+      --rolex-green: #00A651;
+      --rolex-dark: #1a1a1a;
+    }
+    .bg-rolex { background-color: var(--rolex-green) !important; }
+    .btn-rolex { background-color: var(--rolex-green); border-color: var(--rolex-green); }
+    .btn-rolex:hover { background-color: #008640; border-color: #008640; }
+    .text-rolex { color: var(--rolex-green); }
+    .navbar-rolex { background-color: var(--rolex-dark) !important; }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-rolex">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-4" href="#">⌚ Rolex Watches</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarMenu"
+        aria-controls="navbarMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="bg-rolex text-white text-center py-5">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Welcome to Rolex Smartwatches</h1>
+      <p class="lead">Discover premium Swiss engineering in every timepiece.</p>
+      <a href="#products" class="btn btn-light btn-lg mt-3">Explore Collection</a>
+    </div>
+  </section>
+
+  <section id="products" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4 fw-bold">Our Premium Smartwatch Collection</h2>
+      <p class="text-center text-muted mb-5">Experience luxury and innovation with Rolex's finest smartwatches.</p>
+      <div class="row g-4">
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="https://watchesbysjx.com/wp-content/uploads/2024/07/rolex-sky-dweller-white-gold-oysterflex.jpg"
+              class="card-img-top"
+              alt="Rolex Sky-Dweller Smartwatch"
+            />
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h5 class="card-title mb-0">Sky-Dweller</h5>
+                <span class="badge bg-success">Premium</span>
+              </div>
+              <p class="card-text text-muted flex-grow-1">
+                Luxury smartwatch with Sapphire Crystal display, advanced health monitoring, and 14-day battery life.
+              </p>
+              <p class="fw-bold fs-5 text-rolex">₹1,07,667</p>
+              <button
+                type="button"
+                class="btn btn-rolex text-white mt-auto"
+                data-bs-toggle="modal"
+                data-bs-target="#productModal1"
+              >
+                View Details
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="https://monochrome-watches.com/app/uploads/2020/08/Rolex-Submariner-16610-Black-1.jpg"
+              class="card-img-top"
+              alt="Rolex Submariner Sport"
+            />
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h5 class="card-title mb-0">Submariner Sport</h5>
+                <span class="badge bg-warning">Limited</span>
+              </div>
+              <p class="card-text text-muted flex-grow-1">
+                Water-resistant dive smartwatch with titanium case, sports tracking, and 10-day battery life.
+              </p>
+              <p class="fw-bold fs-5 text-rolex">₹82,500 <s class="text-muted fs-6">₹99,000</s></p>
+              <button
+                type="button"
+                class="btn btn-rolex text-white mt-auto"
+                data-bs-toggle="modal"
+                data-bs-target="#productModal2"
+              >
+                View Details
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="https://sothebys-com.brightspotcdn.com/4c/f9/903e503c41588653fd6ab8673709/rolex-rainbow-daytona.jpg"
+              class="card-img-top"
+              alt="Rolex Daytona Chronograph"
+            />
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h5 class="card-title mb-0">Daytona Chronograph</h5>
+                <span class="badge bg-success">Elite</span>
+              </div>
+              <p class="card-text text-muted flex-grow-1">
+                Professional chronograph with ceramic bezel, precision timing, GPS navigation, and 21-day battery.
+              </p>
+              <p class="fw-bold fs-5 text-rolex">₹2,90,750</p>
+              <button
+                type="button"
+                class="btn btn-rolex text-white mt-auto"
+                data-bs-toggle="modal"
+                data-bs-target="#productModal3"
+              >
+                View Details
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="navbar-rolex text-white py-4 mt-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+          <h5 class="fw-bold mb-1">⌚ Rolex Watches</h5>
+          <p class="text-muted mb-0 small">&copy; 2024 Rolex. Premium Smartwatches. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <a href="#" class="text-white text-decoration-none me-3">Twitter</a>
+          <a href="#" class="text-white text-decoration-none me-3">Instagram</a>
+          <a href="#" class="text-white text-decoration-none me-3">LinkedIn</a>
+          <a href="#" class="text-white text-decoration-none">Website</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div
+    class="modal fade"
+    id="productModal1"
+    tabindex="-1"
+    aria-labelledby="productModalLabel1"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-rolex text-white">
+          <h5 class="modal-title" id="productModalLabel1">Rolex Sky-Dweller - Product Details</h5>
+          <button
+            type="button"
+            class="btn-close btn-close-white"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-5">
+              <img
+                src="https://watchesbysjx.com/wp-content/uploads/2024/07/rolex-sky-dweller-white-gold-oysterflex.jpg"
+                class="img-fluid rounded"
+                alt="Rolex Sky-Dweller"
+              />
+            </div>
+            <div class="col-md-7">
+              <h4>Rolex Sky-Dweller Smartwatch</h4>
+              <span class="badge bg-rolex mb-3">Premium Luxury</span>
+              <p class="text-muted">
+                The Sky-Dweller represents the pinnacle of Swiss luxury watchmaking. 
+                With its sapphire crystal AMOLED display and advanced health monitoring capabilities,
+                it's designed for those who demand the absolute best.
+              </p>
+              <ul class="list-unstyled">
+                <li>✅ Sapphire Crystal Display</li>
+                <li>✅ Advanced Health Monitoring</li>
+                <li>✅ Water Resistant (100m)</li>
+                <li>✅ Swiss Movement Technology</li>
+                <li>✅ 14-day Battery Life</li>
+                <li>✅ Premium Leather Strap</li>
+              </ul>
+              <h4 class="text-rolex">₹1,07,667</h4>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-rolex text-white">Add to Cart 🛒</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="modal fade"
+    id="productModal2"
+    tabindex="-1"
+    aria-labelledby="productModalLabel2"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-rolex text-white">
+          <h5 class="modal-title" id="productModalLabel2">Rolex Submariner Sport - Product Details</h5>
+          <button
+            type="button"
+            class="btn-close btn-close-white"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-5">
+              <img
+                src="https://monochrome-watches.com/app/uploads/2020/08/Rolex-Submariner-16610-Black-1.jpg"
+                class="img-fluid rounded"
+                alt="Rolex Submariner Sport"
+              />
+            </div>
+            <div class="col-md-7">
+              <h4>Rolex Submariner Sport Smartwatch</h4>
+              <span class="badge bg-rolex mb-3">Elite Diver</span>
+              <p class="text-muted">
+                The Submariner Sport combines legendary diving heritage with cutting-edge smartwatch technology. 
+                Featuring a reinforced titanium case and advanced water-resistant capabilities, it's 
+                built for adventure in the most demanding environments.
+              </p>
+              <ul class="list-unstyled">
+                <li>✅ Titanium Case</li>
+                <li>✅ Water Resistant (300m)</li>
+                <li>✅ Sports Tracking</li>
+                <li>✅ Dive Computer</li>
+                <li>✅ 10-day Battery Life</li>
+                <li>✅ Helium Release Valve</li>
+              </ul>
+              <h4 class="text-rolex">₹82,500</h4>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-rolex text-white">Add to Cart 🛒</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="modal fade"
+    id="productModal3"
+    tabindex="-1"
+    aria-labelledby="productModalLabel3"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-rolex text-white">
+          <h5 class="modal-title" id="productModalLabel3">Rolex Daytona Chronograph - Product Details</h5>
+          <button
+            type="button"
+            class="btn-close btn-close-white"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-5">
+              <img
+                src="https://sothebys-com.brightspotcdn.com/4c/f9/903e503c41588653fd6ab8673709/rolex-rainbow-daytona.jpg"
+                class="img-fluid rounded"
+                alt="Rolex Daytona Chronograph"
+              />
+            </div>
+            <div class="col-md-7">
+              <h4>Rolex Daytona Chronograph Smartwatch</h4>
+              <span class="badge bg-rolex mb-3">Professional Grade</span>
+              <p class="text-muted">
+                The Daytona Chronograph is the ultimate professional's smartwatch, featuring 
+                precision timing for racing and high-performance activities. With its iconic 
+                ceramic bezel and integrated smart functions, it's engineered for excellence.
+              </p>
+              <ul class="list-unstyled">
+                <li>✅ Ceramic Bezel</li>
+                <li>✅ Chronograph Function</li>
+                <li>✅ GPS Navigation</li>
+                <li>✅ Precision Timing</li>
+                <li>✅ 21-day Battery Life</li>
+                <li>✅ Professional Grade Movement</li>
+              </ul>
+              <h4 class="text-rolex">₹2,90,750</h4>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-rolex text-white">Add to Cart 🛒</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
