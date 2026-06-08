@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Result Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --mint-green: #00c48d;
+            --black-bg: #000000;
+            --dark-gray: #1a1a1a;
+        }
+
+        body {
+            background-color: var(--black-bg);
+            color: var(--mint-green);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .card {
+            background-color: var(--dark-gray);
+            border: 2px solid var(--mint-green);
+            border-radius: 12px;
+        }
+
+        h2 {
+            color: var(--mint-green);
+            font-weight: 700;
+        }
+
+        .form-label {
+            color: var(--mint-green);
+            font-weight: 600;
+        }
+
+        .form-control {
+            background-color: var(--dark-gray);
+            border: 1px solid var(--mint-green);
+            color: var(--mint-green);
+        }
+
+        .form-control:focus {
+            background-color: var(--dark-gray);
+            border-color: var(--mint-green);
+            color: var(--mint-green);
+        }
+
+        .form-control::placeholder {
+            color: rgba(0, 196, 141, 0.5);
+        }
+
+        .btn-primary {
+            background-color: var(--mint-green);
+            border: none;
+            color: var(--black-bg);
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #00b377;
+            transform: scale(1.02);
+        }
+
+        .btn-primary:active {
+            background-color: #009966;
+        }
+
+        .text-muted {
+            color: rgba(0, 196, 141, 0.7) !important;
+        }
+
+        #resultBox {
+            background-color: var(--dark-gray);
+            border: 2px solid var(--mint-green);
+            padding: 20px;
+            border-radius: 8px;
+            color: var(--mint-green);
+        }
+
+        .grade-A, .grade-B, .grade-C, .grade-D, .grade-F {
+            font-weight: 700;
+        }
+
+        .pass {
+            color: #00ff88;
+        }
+
+        .fail {
+            color: #ff4444;
+            text-shadow: 0px 0px 10px rgba(255, 68, 68, 0.6);
+        }
+
+        .result-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(0, 196, 141, 0.3);
+            color: var(--mint-green);
+            font-size: 16px;
+        }
+
+        .result-item:last-child {
+            border-bottom: none;
+        }
+
+        .result-value {
+            font-weight: 600;
+            color: #00ff88;
+        }
+
+        .grade-badge, .pass-badge {
+            display: inline-block;
+            padding: 6px 14px;
+            border-radius: 6px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .grade-badge {
+            background-color: rgba(0, 196, 141, 0.2);
+            border: 1px solid var(--mint-green);
+            color: var(--mint-green);
+        }
+
+        .pass-badge {
+            background-color: rgba(0, 255, 136, 0.2);
+            border: 1px solid #00ff88;
+        }
+
+        .pass {
+            color: #00ff88;
+        }
+
+        .fail {
+            background-color: rgba(255, 68, 68, 0.2);
+            border: 1px solid #ff4444;
+            color: #ff4444;
+        }
+    </style>
+</head>
+<body class="bg-dark text-light">
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card shadow-lg">
+                    <div class="card-body p-4">
+                        <h2 class="text-center mb-3">🎓 Student Result Calculator</h2>
+                        <p class="text-center text-muted">Enter number of subjects and calculate your result</p>
+                        <div class="mb-3">
+                        <label class="form-label">Number of Subjects</label>
+                        <input type="number" id="numSubjects" class="form-control" placeholder="Enter number of subjects" min="1" max="20">
+                    </div>
+                    <div class="d-grid">
+                        <button class="btn btn-primary"onclick="calculateResult()">Calculate Result</button>
+                    </div>
+                    <div id="resultBox" class="mt-4 d-none"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="app.js"></script>
+    </body>
+</html>
