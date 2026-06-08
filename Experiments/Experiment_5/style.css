@@ -1,0 +1,142 @@
+:root {
+    --olive: #556b2f;
+    --olive-deep: #3f5222;
+    --olive-soft: #7a9153;
+    --cream: #fffdd0;
+    --cream-muted: #f5f0bf;
+}
+
+body {
+    min-height: 100vh;
+    color: var(--olive-deep);
+    background: radial-gradient(circle at 20% 10%, #ffffff 0%, var(--cream) 40%, #ece5b0 100%);
+}
+
+h1 {
+    color: #2f3f1a;
+    letter-spacing: 0.2px;
+}
+
+.card-title {
+    color: #33451c;
+    font-weight: 700;
+}
+
+.form-label {
+    color: #3a4c20;
+    font-weight: 600;
+}
+
+.text-secondary {
+    color: #67744e !important;
+}
+
+.glass {
+    background: rgba(255, 253, 208, 0.7);
+    border: 1px solid rgba(85, 107, 47, 0.28);
+    backdrop-filter: blur(8px);
+    border-radius: 14px;
+    box-shadow: 0 10px 24px rgba(85, 107, 47, 0.14);
+}
+
+.form-control {
+    color: var(--olive-deep);
+    border: 1px solid rgba(85, 107, 47, 0.35);
+    background-color: #fffef0;
+}
+
+.form-control:focus {
+    border-color: var(--olive);
+    box-shadow: 0 0 0 0.2rem rgba(85, 107, 47, 0.22);
+}
+
+.btn {
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.btn-success,
+.btn-outline-info,
+.btn-outline-warning,
+.btn-outline-primary,
+.btn-outline-light,
+.btn-outline-success {
+    color: var(--cream);
+    border-color: var(--olive);
+    background-color: var(--olive);
+}
+
+.btn-success:hover,
+.btn-outline-info:hover,
+.btn-outline-warning:hover,
+.btn-outline-primary:hover,
+.btn-outline-light:hover,
+.btn-outline-success:hover {
+    color: var(--cream);
+    border-color: var(--olive-deep);
+    background-color: var(--olive-deep);
+}
+
+.result-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--olive-deep);
+    margin-bottom: 0.75rem;
+}
+
+.emp-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.emp-table th,
+.emp-table td {
+    padding: 10px;
+    border-bottom: 1px solid rgba(85, 107, 47, 0.22);
+    text-align: left;
+}
+
+.emp-table th {
+    color: var(--cream);
+    background: var(--olive);
+}
+
+.badge-high {
+    color: #2f5e11;
+    font-weight: 700;
+}
+
+.badge-low {
+    color: #6d6a43;
+    font-weight: 600;
+}
+
+.stat-card {
+    background: rgba(255, 255, 255, 0.45);
+    border: 1px solid rgba(85, 107, 47, 0.3);
+    border-radius: 10px;
+    padding: 14px;
+}
+
+.stat-label {
+    color: #5e6847;
+    margin-bottom: 4px;
+}
+
+.stat-value {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--olive-deep);
+}
+
+.empty-state {
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.55);
+    border: 1px dashed rgba(85, 107, 47, 0.3);
+    border-radius: 8px;
+    color: var(--olive-deep);
+}
+
+.hidden {
+    display: none;
+}
